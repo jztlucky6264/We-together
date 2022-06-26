@@ -29,9 +29,15 @@ img {
   max-width: 100px;
   height: auto;
 }
-/* 
+
 body {
   background: #121212;
   font-family: "Nunito", sans-serif;
   color: #fff;
-} */
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
