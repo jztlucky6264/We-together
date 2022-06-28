@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Card from "../../components/shared/Navigation/Card/Card";
 import Button from "../../components/shared/Button/Button";
 
@@ -12,9 +12,9 @@ const Home = () => {
     marginLeft: "10px",
   };
 
-  const navigate = useNavigate();
+  const history = useHistory();
   function startRegist() {
-    navigate("/register");
+    history.push("/authenticate");
   }
 
   return (
@@ -27,13 +27,10 @@ const Home = () => {
         </p>
 
         <div>
-          <Button onClick={startRegist} text="Get your username"></Button>
+          <Button onClick={startRegist} text="Let's Go"></Button>
         </div>
         <div className={styles.signinWrapper}>
           <span className={styles.hasInvite}>Have an invite text?</span>
-          <Link style={signInLinkStyle} to="/login">
-            Sign in
-          </Link>
         </div>
       </Card>
     </div>
