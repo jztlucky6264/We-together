@@ -5,7 +5,11 @@
   background: #1d1d1d;
   padding: 30px;
   border-radius: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
 }
 
 .headingWrapper {

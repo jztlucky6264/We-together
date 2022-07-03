@@ -2,8 +2,6 @@ import "./App.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Navigation from "./components/shared/Navigation/Navigation";
-import Register from "./Pages/Register/Register";
-import Login from "./Pages/Login/Login";
 import Authenticate from "./Pages/Authentication/Authenticate";
 import Activate from "./Pages/Activate/Activate";
 import Rooms from "./Pages/Rooms/Rooms";
