@@ -27,7 +27,6 @@ class AuthController {
       });
     } catch (error) {
       console.log(error);
-      res.status(500).json({ message: "otp sending failed" });
     }
 
     res.json({ hash: hash });
